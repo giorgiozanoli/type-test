@@ -12,8 +12,8 @@ gulp.task("requirejs", function (done) {
         "include": [
             "../../vendor/requirejs/require",
         ],
-        "name" : '../app',
-        "optimize": "uglify2",
+        "name" : '../AppBootstrap',
+        "optimize": "none", //"uglify2",
         "out": 'build/app-build.js',
         "paths": {
           "jquery" : '../../vendor/jquery/dist/jquery',
