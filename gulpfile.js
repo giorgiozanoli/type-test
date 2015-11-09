@@ -13,7 +13,7 @@ gulp.task("requirejs", function (done) {
             "../../vendor/requirejs/require",
         ],
         "name" : '../AppBootstrap',
-        "optimize": "none", //"uglify2",
+        "optimize": "uglify2",
         "out": 'build/app-build.js',
         "paths": {
           "jquery" : '../../vendor/jquery/dist/jquery',
