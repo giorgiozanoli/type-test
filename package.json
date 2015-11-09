@@ -1,0 +1,31 @@
+{
+  "name": "type-test",
+  "version": "1.0.0",
+  "description": "Some tests with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install && gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giorgiozanoli/type-test.git"
+  },
+  "keywords": [
+    "typescript",
+    "AMD"
+  ],
+  "author": "Giorgio Zanoli <giorgio.zanoli@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giorgiozanoli/type-test/issues"
+  },
+  "homepage": "https://github.com/giorgiozanoli/type-test#readme",
+  "devDependencies": {
+    "bower": "^1.6.5",
+    "gulp": "^3.9.0",
+    "gulp-html-replace": "^1.5.4",
+    "gulp-htmlmin": "^1.2.0",
+    "gulp-typescript": "^2.9.2",
+    "requirejs": "^2.1.20"
+  }
+}

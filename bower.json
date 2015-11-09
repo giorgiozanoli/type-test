@@ -1,0 +1,27 @@
+{
+  "name": "type-test",
+  "homepage": "https://github.com/giorgiozanoli/type-test",
+  "authors": [
+    "Giorgio Zanoli <giorgio_zanoli@hotmail.com>"
+  ],
+  "description": "Some tests with Typescript",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "typescript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.20",
+    "lodash": "~3.10.1",
+    "jquery": "1.11.3"
+  }
+}
