@@ -1,3 +1,6 @@
+/// <reference path="../typings/jquery.d.ts" />
+import $ = require('jquery');
+
 export class Person {
     public personName : String
     private personType : String
@@ -8,6 +11,11 @@ export class Person {
     }
 
     greet() {
-        return "<h1>Hello by "+ this.personType + " " + this.personName + "</h1>";
+      return $('<div></div>')
+                .append(
+                  $('<h1></h1>')
+                    .html("Hello by " + this.personType + " " + this.personName)
+                )
+                .html();
     }
 }

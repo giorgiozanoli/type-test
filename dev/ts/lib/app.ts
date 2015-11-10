@@ -1,3 +1,5 @@
+/// <reference path="../typings/jquery.d.ts" />
+import $ = require('jquery');
 import {Person} from "./Person";
 import {Dog} from "./Dog";
 
@@ -12,6 +14,8 @@ export class App {
   }
 
   updateBody(){
-    document.body.innerHTML = this.person.greet() + this.dog.greet();
+    $('body')
+      .append(this.person.greet())
+      .append(this.dog.greet());
   }
 }

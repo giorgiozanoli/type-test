@@ -1,3 +1,5 @@
+/// <reference path="../typings/jquery.d.ts" />
+import $ = require('jquery');
 import {IAnimal} from './IAnimal';
 
 export class Dog implements IAnimal{
@@ -12,6 +14,11 @@ export class Dog implements IAnimal{
   }
 
   greet() {
-      return "<h1>Woof woof by "+ this.name + " with " + this.color + " coloured fur.</h1>";
+    return $('<div></div>')
+              .append(
+                $('<h1></h1>')
+                  .html("Woof woof by "+ this.name + " with " + this.color + " coloured fur.")
+              )
+              .html();
   }
 }

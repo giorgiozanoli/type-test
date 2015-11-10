@@ -1,4 +1,4 @@
-/// <reference path="./lib/require.d.ts"/>
+/// <reference path="./typings/require.d.ts"/>
 
 require(['app'], function (app) {
     'use strict';
