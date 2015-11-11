@@ -5,12 +5,12 @@ export class Person {
     public personName : String
     private personType : String
 
-    constructor(personName: String) {
-      this.personType = 'Mr';
+    constructor(personType: String = "Mr", personName: String = "White") {
+      this.personType = personType;
       this.personName = personName;
     }
 
-    greet() {
+    greet() : String{
       return $('<div></div>')
                 .append(
                   $('<h1></h1>')

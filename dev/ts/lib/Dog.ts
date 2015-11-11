@@ -3,17 +3,16 @@ import $ = require('jquery');
 import {IAnimal} from './IAnimal';
 
 export class Dog implements IAnimal{
-  public hasFur : boolean
+  public hasFur : boolean = true
   public color  : String
   public name   : String
 
   constructor(name: String = "Teddy", color: String = "black"){
-    this.hasFur = true;
     this.color = color;
     this.name  = name;
   }
 
-  greet() {
+  greet() : String{
     return $('<div></div>')
               .append(
                 $('<h1></h1>')
